@@ -129,7 +129,7 @@ Kommunal- og distriktsdepartementet (KDD) publiserte i 2023 en veileder for area
 
 ### Datamodell - asciidoc
 
-[NasjonaltGrunnkartForArealanalyse-20260101](./NasjonaltGrunnkartForArealanalyse-20260101/modellRapport.html)
+[NasjonaltGrunnkartForArealanalyse-20260101](../blob/main/produktspesifikasjon/arealanalyse2/NasjonaltGrunnkartForArealanalyse-20260101/modellRapport.html)
 
 ### Datamodell
 
