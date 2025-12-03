@@ -1,0 +1,754 @@
+﻿ 
+=== «ApplicationSchema» NasjonaltGrunnkartForArealanalyse-20260101
+**Definisjon:** 
+ 
+[discrete]
+==== Profilparametre i tagged values
+// Topp av tabell _______________
+[cols="20,80"]
+|===
+|language 
+|no 
+ 
+|SOSI_modellstatus 
+|utkast 
+ 
+|SOSI_spesifikasjonstype 
+|produktspesifikasjon 
+ 
+|targetNamespace 
+|https://skjema.geonorge.no/SOSI/produktspesifikasjon/GrunnkartArealregnskap\1.0 
+ 
+|version 
+|1.0 
+ 
+|xmlns 
+|app 
+ 
+|xsdDocument 
+|grunnkartArealregnskap 
+ 
+|===
+// Slutt på tabell _______________
+ 
+//  ----------- Skillelinje -----------
+'''
+.Realiseringer fra SOSI- del 1
+image::Diagrammer\Realiseringer fra SOSI- del 1.png[link=Diagrammer\Realiseringer fra SOSI- del 1.png, , alt="Diagram med navn  Realiseringer fra SOSI- del 1  som viser UML-klasser beskrevet i teksten nedenfor."]
+ 
+ 
+//  ----------- Skillelinje -----------
+'''
+.NasjonaltGrunnkartForArealanalyse-20260101
+image::Diagrammer\NasjonaltGrunnkartForArealanalyse-20260101.png[link=Diagrammer\NasjonaltGrunnkartForArealanalyse-20260101.png, , alt="Diagram med navn  NasjonaltGrunnkartForArealanalyse-20260101  som viser UML-klasser beskrevet i teksten nedenfor."]
+ 
+ 
+//  ----------- Skillelinje -----------
+'''
+.Kodelister
+image::Diagrammer\Kodelister.png[link=Diagrammer\Kodelister.png, , alt="Diagram med navn  Kodelister  som viser UML-klasser beskrevet i teksten nedenfor."]
+ 
+ 
+//  ----------- Skillelinje -----------
+'''
+[[apparealdekke]]
+ 
+==== «CodeList» Arealdekke
+**Definisjon:** 
+ 
+[discrete]
+===== Profilparametre i tagged values
+// Topp av tabell _______________
+[cols="20,80"]
+|===
+|asDictionary 
+|true 
+ 
+|codeList 
+|https://register.geonorge.no/sosi-kodelister/temadata/nasjonalt-grunnkart-for-arealanalyse/arealdekke 
+ 
+|===
+// Slutt på tabell _______________
+ 
+//  ----------- Skillelinje -----------
+'''
+[[apparealressursgrunnforhold]]
+ 
+==== «CodeList» ArealressursGrunnforhold
+**Definisjon:** 
+ 
+[discrete]
+===== Profilparametre i tagged values
+// Topp av tabell _______________
+[cols="20,80"]
+|===
+|asDictionary 
+|true 
+ 
+|codeList 
+|https://register.geonorge.no/sosi-kodelister/fkb/ar5/5.0/arealressursgrunnforhold 
+ 
+|===
+// Slutt på tabell _______________
+ 
+//  ----------- Skillelinje -----------
+'''
+[[apparealressursskogbonitet]]
+ 
+==== «CodeList» ArealressursSkogbonitet
+**Definisjon:** 
+ 
+[discrete]
+===== Profilparametre i tagged values
+// Topp av tabell _______________
+[cols="20,80"]
+|===
+|asDictionary 
+|true 
+ 
+|codeList 
+|https://register.geonorge.no/sosi-kodelister/fkb/ar5/5.0/arealressursskogbonitet 
+ 
+|===
+// Slutt på tabell _______________
+ 
+//  ----------- Skillelinje -----------
+'''
+[[apphavfiskeribruk]]
+ 
+==== «CodeList» HavFiskeriBruk
+**Definisjon:** 
+ 
+[discrete]
+===== Profilparametre i tagged values
+// Topp av tabell _______________
+[cols="20,80"]
+|===
+|asDictionary 
+|true 
+ 
+|codeList 
+|https://register.geonorge.no/sosi-kodelister/temadata/nasjonalt-grunnkart-for-arealanalyse/havfiskeribruk 
+ 
+|===
+// Slutt på tabell _______________
+ 
+//  ----------- Skillelinje -----------
+'''
+[[apptreslag]]
+ 
+==== «CodeList» Treslag
+**Definisjon:** 
+ 
+[discrete]
+===== Profilparametre i tagged values
+// Topp av tabell _______________
+[cols="20,80"]
+|===
+|asDictionary 
+|true 
+ 
+|codeList 
+|https://register.geonorge.no/sosi-kodelister/temadata/nasjonalt-grunnkart-for-arealanalyse/treslag 
+ 
+|===
+// Slutt på tabell _______________
+ 
+//  ----------- Skillelinje -----------
+'''
+[[apparealregnskap]]
+ 
+==== «FeatureType» Arealregnskap
+**Definisjon:** 
+ 
+[discrete]
+===== Egenskaper
+// Topp av tabell _______________
+[cols="20,80"]
+|===
+|**Navn:** 
+|**område** 
+ 
+|Definisjon: 
+| 
+ 
+|Multiplisitet: 
+|[1..1] 
+ 
+|Type: 
+|http://skjema.geonorge.no/SOSI/basistype/GM_MultiSurface[GM_MultiSurface] 
+ 
+|===
+// Slutt på tabell _______________
+// Topp av tabell _______________
+[cols="20,80"]
+|===
+|**Navn:** 
+|**arealdekke** 
+ 
+|Definisjon: 
+| 
+ 
+|Multiplisitet: 
+|[1..1] 
+ 
+|Type: 
+|<<apparealdekke, «CodeList» Arealdekke>> 
+ 
+|===
+// Slutt på tabell _______________
+// Topp av tabell _______________
+[cols="20,80"]
+|===
+|**Navn:** 
+|**oppdateringsdato** 
+ 
+|Definisjon: 
+|tidspunkt for siste endring på objektet 
+
+Merknad: 
+Oppdateringsdato kan være forskjellig fra datafangsdato ved at data som er registrert kan bufres en kortere eller lengre periode før disse legges inn i datasystemet (databasen). 
+ 
+|Multiplisitet: 
+|[1..1] 
+ 
+|Type: 
+|http://skjema.geonorge.no/SOSI/basistype/DateTime[DateTime] 
+ 
+|definition 
+|"Date and time at which this version of the spatial object was inserted or changed in the spatial data set."@en 
+ 
+|===
+// Slutt på tabell _______________
+// Topp av tabell _______________
+[cols="20,80"]
+|===
+|**Navn:** 
+|**treslag** 
+ 
+|Definisjon: 
+| 
+ 
+|Multiplisitet: 
+|[0..1] 
+ 
+|Type: 
+|<<apptreslag, «CodeList» Treslag>> 
+ 
+|===
+// Slutt på tabell _______________
+// Topp av tabell _______________
+[cols="20,80"]
+|===
+|**Navn:** 
+|**identifikasjon** 
+ 
+|Definisjon: 
+|unik identifikasjon av et objekt 
+ 
+|Multiplisitet: 
+|[1..1] 
+ 
+|Type: 
+|Generelle typer 5.1::SOSI_Fellesegenskaper og SOSI_Objekt::[.underline]##«dataType» Identifikasjon## 
+ 
+|===
+// Slutt på tabell _______________
+// Topp av tabell _______________
+[cols="20,80"]
+|===
+|**Navn:** 
+|**skogbonitet** 
+ 
+|Definisjon: 
+| 
+ 
+|Multiplisitet: 
+|[0..1] 
+ 
+|Type: 
+|<<apparealressursskogbonitet, «CodeList» ArealressursSkogbonitet>> 
+ 
+|===
+// Slutt på tabell _______________
+// Topp av tabell _______________
+[cols="20,80"]
+|===
+|**Navn:** 
+|**grunnforhold** 
+ 
+|Definisjon: 
+| 
+ 
+|Multiplisitet: 
+|[1..1] 
+ 
+|Type: 
+|<<apparealressursgrunnforhold, «CodeList» ArealressursGrunnforhold>> 
+ 
+|===
+// Slutt på tabell _______________
+// Topp av tabell _______________
+[cols="20,80"]
+|===
+|**Navn:** 
+|**arealbrukHovedklasse** 
+ 
+|Definisjon: 
+| 
+ 
+|Multiplisitet: 
+|[0..1] 
+ 
+|Type: 
+|<<appssbarealbrukhovedklasse, «CodeList» SsbArealbrukHovedklasse>> 
+ 
+|defaultCodeSpace 
+|https://register.geonorge.no/sosi-kodelister/temadata/ssbarealbruk/ssbarealbrukhovedklasse 
+ 
+|===
+// Slutt på tabell _______________
+// Topp av tabell _______________
+[cols="20,80"]
+|===
+|**Navn:** 
+|**arealbrukUnderklasse** 
+ 
+|Definisjon: 
+| 
+ 
+|Multiplisitet: 
+|[0..1] 
+ 
+|Type: 
+|<<appssbarealbrukunderklasse, «CodeList» SsbArealbrukUnderklasse>> 
+ 
+|defaultCodeSpace 
+|https://register.geonorge.no/sosi-kodelister/temadata/ssbarealbruk/ssbarealbrukunderklasse 
+ 
+|===
+// Slutt på tabell _______________
+// Topp av tabell _______________
+[cols="20,80"]
+|===
+|**Navn:** 
+|**havarealbrukStedbundet** 
+ 
+|Definisjon: 
+| 
+ 
+|Multiplisitet: 
+|[0..1] 
+ 
+|Type: 
+|http://skjema.geonorge.no/SOSI/basistype/CharacterString[CharacterString] 
+ 
+|===
+// Slutt på tabell _______________
+// Topp av tabell _______________
+[cols="20,80"]
+|===
+|**Navn:** 
+|**havfiskeribruk** 
+ 
+|Definisjon: 
+| 
+ 
+|Multiplisitet: 
+|[0..1] 
+ 
+|Type: 
+|http://skjema.geonorge.no/SOSI/basistype/CharacterString[CharacterString] 
+ 
+|===
+// Slutt på tabell _______________
+// Topp av tabell _______________
+[cols="20,80"]
+|===
+|**Navn:** 
+|**okosystemtype1** 
+ 
+|Definisjon: 
+| 
+ 
+|Multiplisitet: 
+|[1..1] 
+ 
+|Type: 
+|http://skjema.geonorge.no/SOSI/basistype/CharacterString[CharacterString] 
+ 
+|===
+// Slutt på tabell _______________
+// Topp av tabell _______________
+[cols="20,80"]
+|===
+|**Navn:** 
+|**okosystemtype2** 
+ 
+|Definisjon: 
+| 
+ 
+|Multiplisitet: 
+|[0..1] 
+ 
+|Type: 
+|http://skjema.geonorge.no/SOSI/basistype/CharacterString[CharacterString] 
+ 
+|===
+// Slutt på tabell _______________
+// Topp av tabell _______________
+[cols="20,80"]
+|===
+|**Navn:** 
+|**okosystemtype3** 
+ 
+|Definisjon: 
+| 
+ 
+|Multiplisitet: 
+|[0..1] 
+ 
+|Type: 
+|http://skjema.geonorge.no/SOSI/basistype/CharacterString[CharacterString] 
+ 
+|===
+// Slutt på tabell _______________
+// Topp av tabell _______________
+[cols="20,80"]
+|===
+|**Navn:** 
+|**okosystemtypeKode** 
+ 
+|Definisjon: 
+| 
+ 
+|Multiplisitet: 
+|[1..1] 
+ 
+|Type: 
+|http://skjema.geonorge.no/SOSI/basistype/CharacterString[CharacterString] 
+ 
+|===
+// Slutt på tabell _______________
+// Topp av tabell _______________
+[cols="20,80"]
+|===
+|**Navn:** 
+|**grunnkartKilde** 
+ 
+|Definisjon: 
+| 
+ 
+|Multiplisitet: 
+|[1..1] 
+ 
+|Type: 
+|http://skjema.geonorge.no/SOSI/basistype/CharacterString[CharacterString] 
+ 
+|===
+// Slutt på tabell _______________
+// Topp av tabell _______________
+[cols="20,80"]
+|===
+|**Navn:** 
+|**ssbarealbrukKilde** 
+ 
+|Definisjon: 
+| 
+ 
+|Multiplisitet: 
+|[0..1] 
+ 
+|Type: 
+|http://skjema.geonorge.no/SOSI/basistype/CharacterString[CharacterString] 
+ 
+|===
+// Slutt på tabell _______________
+// Topp av tabell _______________
+[cols="20,80"]
+|===
+|**Navn:** 
+|**kommunenummer** 
+ 
+|Definisjon: 
+| 
+ 
+|Multiplisitet: 
+|[1..1] 
+ 
+|Type: 
+|<<appkommunenummer, «CodeList» Kommunenummer>> 
+ 
+|defaultCodeSpace 
+|https://register.geonorge.no/sosi-kodelister/inndelinger/inndelingsbase/kommunenummer 
+ 
+|===
+// Slutt på tabell _______________
+// Topp av tabell _______________
+[cols="20,80"]
+|===
+|**Navn:** 
+|**arealM2** 
+ 
+|Definisjon: 
+| 
+ 
+|Multiplisitet: 
+|[1..1] 
+ 
+|Type: 
+|http://skjema.geonorge.no/SOSI/basistype/Real[Real] 
+ 
+|===
+// Slutt på tabell _______________
+// Topp av tabell _______________
+[cols="20,80"]
+|===
+|**Navn:** 
+|**omkrets** 
+ 
+|Definisjon: 
+| 
+ 
+|Multiplisitet: 
+|[1..1] 
+ 
+|Type: 
+|http://skjema.geonorge.no/SOSI/basistype/Real[Real] 
+ 
+|===
+// Slutt på tabell _______________
+// Topp av tabell _______________
+[cols="20,80"]
+|===
+|**Navn:** 
+|**bruktflagg** 
+ 
+|Definisjon: 
+| 
+ 
+|Multiplisitet: 
+|[1..1] 
+ 
+|Type: 
+|http://skjema.geonorge.no/SOSI/basistype/Integer[Integer] 
+ 
+|===
+// Slutt på tabell _______________
+ 
+[discrete]
+===== Arv og realiseringer
+// Topp av tabell _______________
+[cols="20,80"]
+|===
+|Realisert fra: 
+|
+Generelle typer 5.1::SOSI_Fellesegenskaper og SOSI_Objekt::[.underline]##«FeatureType» SOSI_Fellesegenskaper## +
+ 
+|===
+// Slutt på tabell _______________
+ 
+//  ----------- Skillelinje -----------
+'''
+[[appidentifikasjon]]
+ 
+==== «dataType» Identifikasjon
+**Definisjon:** Unik identifikasjon av et objekt i et datasett, forvaltet av den ansvarlige produsent/forvalter, og kan benyttes av eksterne applikasjoner som stabil referanse til objektet. 
+
+Merknad 1: Denne objektidentifikasjonen må ikke forveksles med en tematisk objektidentifikasjon, slik som f.eks bygningsnummer. 
+
+Merknad 2: Denne unike identifikatoren vil ikke endres i løpet av objektets levetid, og ikke gjenbrukes i andre objekt.
+ 
+[discrete]
+===== Egenskaper
+// Topp av tabell _______________
+[cols="20,80"]
+|===
+|**Navn:** 
+|**lokalId** 
+ 
+|Definisjon: 
+|lokal identifikator av et objekt
+
+Merknad: Det er dataleverendørens ansvar å sørge for at den lokale identifikatoren er unik innenfor navnerommet. 
+ 
+|Multiplisitet: 
+|[1..1] 
+ 
+|Type: 
+|http://skjema.geonorge.no/SOSI/basistype/CharacterString[CharacterString] 
+ 
+|===
+// Slutt på tabell _______________
+// Topp av tabell _______________
+[cols="20,80"]
+|===
+|**Navn:** 
+|**navnerom** 
+ 
+|Definisjon: 
+|navnerom som unikt identifiserer datakilden til et objekt, anbefales å være en http-URI
+
+Eksempel: http://data.geonorge.no/SentraltStedsnavnsregister/1.0
+
+Merknad : Verdien for nanverom vil eies av den dataprodusent som har ansvar for de unike identifikatorene og må være registrert i data.geonorge.no eller data.norge.no 
+ 
+|Multiplisitet: 
+|[1..1] 
+ 
+|Type: 
+|http://skjema.geonorge.no/SOSI/basistype/CharacterString[CharacterString] 
+ 
+|===
+// Slutt på tabell _______________
+// Topp av tabell _______________
+[cols="20,80"]
+|===
+|**Navn:** 
+|**versjonId** 
+ 
+|Definisjon: 
+|identifikasjon av en spesiell versjon av et geografisk objekt (instans) 
+ 
+|Multiplisitet: 
+|[0..1] 
+ 
+|Type: 
+|http://skjema.geonorge.no/SOSI/basistype/CharacterString[CharacterString] 
+ 
+|===
+// Slutt på tabell _______________
+ 
+[discrete]
+===== Arv og realiseringer
+// Topp av tabell _______________
+[cols="20,80"]
+|===
+|Realisert fra: 
+|
+Generelle typer 5.1::SOSI_Fellesegenskaper og SOSI_Objekt::[.underline]##«dataType» Identifikasjon## +
+ 
+|===
+// Slutt på tabell _______________
+ 
+//  ----------- Skillelinje -----------
+'''
+[[appkommunenummer]]
+ 
+==== «CodeList» Kommunenummer
+**Definisjon:** 
+ 
+[discrete]
+===== Profilparametre i tagged values
+// Topp av tabell _______________
+[cols="20,80"]
+|===
+|asDictionary 
+|true 
+ 
+|codeList 
+|https://register.geonorge.no/sosi-kodelister/inndelinger/inndelingsbase/kommunenummer 
+ 
+|===
+// Slutt på tabell _______________
+ 
+//  ----------- Skillelinje -----------
+'''
+[[appssbarealbrukhovedklasse]]
+ 
+==== «CodeList» SsbArealbrukHovedklasse
+**Definisjon:** 
+ 
+[discrete]
+===== Profilparametre i tagged values
+// Topp av tabell _______________
+[cols="20,80"]
+|===
+|asDictionary 
+|true 
+ 
+|codeList 
+|https://register.geonorge.no/sosi-kodelister/temadata/ssbarealbruk/ssbarealbrukhovedklasse 
+ 
+|===
+// Slutt på tabell _______________
+ 
+//  ----------- Skillelinje -----------
+'''
+[[appssbarealbrukunderklasse]]
+ 
+==== «CodeList» SsbArealbrukUnderklasse
+**Definisjon:** 
+ 
+[discrete]
+===== Profilparametre i tagged values
+// Topp av tabell _______________
+[cols="20,80"]
+|===
+|asDictionary 
+|true 
+ 
+|codeList 
+|https://register.geonorge.no/sosi-kodelister/temadata/ssbarealbruk/ssbarealbrukunderklasse 
+ 
+|===
+// Slutt på tabell _______________
+ 
+//  ----------- Skillelinje -----------
+'''
+[[appskogressurstreslag]]
+ 
+==== «CodeList» SkogressursTreslag
+**Definisjon:** Beskriver treslagssammensetning ved aggregering av egenskapen treslag.
+ 
+[discrete]
+===== Koder
+// Topp av tabell _______________
+[cols="30,60,10"]
+|===
+|**Kodenavn:** 
+|**Definisjon:** 
+|**Utvekslingsalias:** 
+ 
+|grandominert 
+| Volum av gran utgjør mer enn 50 % av totalvolumet.  
+|1 
+ 
+|furudominert 
+| Volum av furu utgjør mer enn 50 % av totalvolumet.  
+|2 
+ 
+|barblanding 
+| Samlet volum av gran og furu utgjør mer enn 75 % av totalvolumet.  
+|3 
+ 
+|blanding 
+| Volum av gran, furu, lauv er alle mindre enn 50 %, og samlet volum av gran og furu er mindre enn 75 %.  
+|4 
+ 
+|lauvdominert 
+| Volum av bjørk og andre lauvtrearter utgjør mer enn 50 % av totalvolumet.  
+|5 
+ 
+|Ikke tresatt 
+| Samlet volum av gran, furu og lauv er lik null.  
+|6 
+ 
+|ikke beregnet 
+| Volum har ikke blitt estimert.  
+|7 
+ 
+|===
+// Slutt på tabell _______________
+ 
+[discrete]
+===== Arv og realiseringer
+// Topp av tabell _______________
+[cols="20,80"]
+|===
+|Realisert fra: 
+|
+SR16_20230218::[.underline]##«CodeList» SkogressursTreslagSammenstilt## +
+ 
+|===
+// Slutt på tabell _______________
