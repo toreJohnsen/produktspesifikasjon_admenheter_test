@@ -127,6 +127,10 @@ Grunnkartet kan testes som grunnlag for etablering av arealregnskap, og kan supp
 
 Kommunal- og distriktsdepartementet (KDD) publiserte i 2023 en veileder for arealregnskap i kommunene, som gir oversikt over relevante datakilder og metoder. Når en endelig årsversjon av Grunnkartet er klart til drift, vil det kunne supplere og delvis erstatte datakildene som er nevnt i denne veilederen. For andre typer arealregnskap må det utvikles egne metoder med tilhørende veiledere.
 
+### Datamodell - asciidoc
+
+[NasjonaltGrunnkartForArealanalyse-20260101](../NasjonaltGrunnkartForArealanalyse-20260101/modellRapport.adoc)
+
 ### Datamodell
 
 ![Arealanalyse2 xmi feature catalogue](arealanalyse2_xmi_feature_catalogue.png)
