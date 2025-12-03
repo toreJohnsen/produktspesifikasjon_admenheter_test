@@ -131,6 +131,8 @@ Kommunal- og distriktsdepartementet (KDD) publiserte i 2023 en veileder for area
 
 [NasjonaltGrunnkartForArealanalyse-20260101](../blob/main/produktspesifikasjon/arealanalyse2/NasjonaltGrunnkartForArealanalyse-20260101/modellRapport.html)
 
+[NasjonaltGrunnkartForArealanalyse-20260101](../blob/main/produktspesifikasjon/arealanalyse2/NasjonaltGrunnkartForArealanalyse-20260101/modellRapport.adoc)
+
 ### Datamodell
 
 ![Arealanalyse2 xmi feature catalogue](arealanalyse2_xmi_feature_catalogue.png)
